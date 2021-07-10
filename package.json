@@ -1,0 +1,51 @@
+{
+  "name": "vue-chatbotbox",
+  "version": "0.2.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/de-yu/vue-chatbox.git"
+  },
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/vue-chatbox.common.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build --dest demo",
+    "buildLib": "vue-cli-service build --dest lib --target lib --name vue-chatbox ./src/components/index.ts",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "publish": "npm publish"
+  },
+  "dependencies": {
+    "bin-code-editor": "^0.9.0",
+    "core-js": "^3.6.5",
+    "lodash-es": "^4.17.21",
+    "v-jsoneditor": "^1.4.4",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-json-editor": "^1.4.3",
+    "vue-property-decorator": "^9.1.2"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.4",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~4.1.5",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
